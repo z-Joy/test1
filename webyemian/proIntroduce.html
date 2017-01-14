@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>proIntroduce</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+			.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+	
+	
+			.main{width: 100%;height:0%;overflow: auto;-webkit-box-flex: 1;}
+			.main .productNum{width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #000;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;font-size: .7rem;}
+			.main .productNum .Num{width: 0;-webkit-box-flex: 1;padding-left: 20px;box-sizing: border-box;}
+			
+			.main .product{width: 100%;border-top: 1px solid #636363;color: #000;box-sizing: border-box;text-align: center;}
+			.main .product img{width: 10.925rem;height: 9.15rem;border: 1px solid #AAAAAA;display: inline-block;margin: .75rem 0 1.25rem 0;}
+			.main .product .nameJS{width: 11.65rem;height: 2.05rem;display: inline-block;background: -webkit-linear-gradient(top,#f65e87,#d91351);position: relative;box-sizing: border-box;color: #fff;line-height: 2.05rem;font-size: .9rem;}		
+			.main .product .nameJS:before{content: '';display: block;width: 0;height: 0;border-top: 1rem solid transparent;border-bottom: 1rem solid transparent;border-right: 1rem solid #ed4777;position: absolute;left: -1rem;top: 1px;}
+			.main .product .nameJS:after{content: '';display: block;width: 0.55rem;height: .55rem;position: absolute;left: -.2rem;top: .75rem;border-radius: 100%;background: #fff;}
+			.main .product p{width: 10.925rem;display: inline-block;height: 1rem;margin-top: .8rem;font-size: .7rem;text-align: left;}
+			.main .product p span:nth-of-type(1){text-decoration: line-through;}
+			.main .product p span:nth-of-type(2){float: right;}
+			
+			.bottom{width: 100%;height: 2.45rem;-webkit-box-flex: 0;background: #000000;color: #fff;display: -webkit-box;line-height: 2.45rem;}
+			.bottom a{display: block;-webkit-box-flex: 1;font-size: .8rem;text-align: center;box-sizing: border-box;border-top: 4px solid #000;width: 0;color: #fff;}
+			.bottom a:nth-of-type(1){border-top: 4px solid #e43669;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back" id="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					商品介绍
+				</div>
+				<div class="jies">
+					<p>分享</p>
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<div class="productNum">
+					<div class="Num">
+						距离结束时间:<span>04天01时15分47.2秒</span>
+					</div>
+				</div>
+				<div class="product">
+					<img src="img/huodong1.jpg" /><br />
+					<div class="nameJS">
+						￥259&nbsp;灰色印花短袖T恤
+					</div><br />
+					<p>市场价：<span>￥439</span>&nbsp;&nbsp;4.3折<span>125人购买</span></p>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			
+			<footer class="bottom">
+				<a href="proIntroduce.html" class="xz1">
+					<span>介绍</span>
+				</a>
+				<a href="proDetails.html" class="xz2">
+					<span>详情</span>
+				</a>
+				<a href="detailsImg.html" class="xz3">
+					<span>实拍</span>
+				</a>
+			</footer>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var back=document.getElementById("back");
+			back.onclick=function(){
+				window.history.back();		
+			}
+		}
+	</script>
+</html>

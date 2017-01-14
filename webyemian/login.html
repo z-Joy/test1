@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box; -webkit-box-flex: 0;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+			.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+	
+	
+			.main{width: 100%;height:0%;overflow: auto;-webkit-box-flex: 1;}
+			.main .kong{width: 100%;border-top: 0.05rem solid #636363;height: 1.625rem;box-sizing: border-box;}
+			.main .text{width: 87.5%;height: 1.95rem;border: 0;border: solid #636363;border-width: 0.05rem 0 0 0.05rem;border-radius: .5rem;margin-left: 6.25%;box-shadow: .1rem .1rem .1rem 0 rgba(255,255,0,.1);padding-left: 1rem;box-sizing: border-box;line-height: 1.95rem;}
+			.main input:nth-of-type(1){margin-bottom: 1.25rem;}
+			.main input:nth-of-type(2){margin-bottom: 1rem;}
+			.main input:nth-of-type(3){padding: 0;color: #fff;background: -webkit-linear-gradient(top,#f65e87,#d91351);border: 0;border-top: 0.05rem solid #aaa;box-shadow: 0 .05rem .05rem 0 rgba(0,0,0,.8);cursor: pointer;}
+			.main .tishi{font-size: .6rem;line-height: .75rem;margin-bottom: 1.15rem;}
+			.main .tishi input:nth-of-type(1){float: left;width: .75rem;height: .75rem;border: 0;border: 1px solid #aaa;margin: 0 .5rem 0 6.25%;}
+			.main .tishi span{margin-right: 2rem;}
+			.main .tishi span a{font-size: .6rem;line-height: .75rem;color: #CBCBCB;text-decoration: underline;}
+			.bottom a:nth-of-type(4){border-top: 4px solid #e43669;}
+				
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back" id="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					登录
+				</div>
+				<div class="jies">
+					<p id="L_registerBtn">注册</p>
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<p class="kong"></p>
+				<input type="text" name="" id="login_name" value="" placeholder="账号" class="text"/><br />
+				<input type="password" name="" id="login_psw" value="" placeholder="密码" class="text"/><br />
+				<div class="tishi">
+					<input type="checkbox" name="" id="checkBox" value="" /><span>记住密码</span><span id=""><a href="###">忘记密码？</a></span>
+				</div>
+				<input type="button" name="" id="" value="登录" class="text" onclick="_login()"/>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			<footer class="bottom">
+				<a href="index.html" class="xz1" >
+					<i class="fa fa-home"></i>
+					<br />
+					<span>首页</span>
+				</a>
+				<a href="classify.html" class="xz2">
+					<i class="fa fa-bars"></i><br />
+					<span>分类</span>
+				</a>
+				<a href="shopCar.html" class="xz3">
+					<i class="fa fa-shopping-cart"></i><br />
+					<span>购物车</span>
+				</a>
+				<a href="myShow.html" class="xz4">
+					<i class="fa fa-user"></i><br />
+					<span>我的秀</span>
+				</a>
+				<a href="more.html" class="xz5">
+					<i class="fa fa-ellipsis-h"></i><br />
+					<span>更多</span>
+				</a>
+			</footer>
+			
+		</div>
+	</body>
+	<script src="js/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>

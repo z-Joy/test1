@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>shopCar</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+			.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+	
+			.main{width: 100%;height:0%;overflow: hidden;-webkit-box-flex: 1;display: -webkit-box;-webkit-box-orient: vertical;}
+			
+			.main .productNum{width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #000;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;font-size: .7rem;}
+			.main .productNum .Num{width: 0;-webkit-box-flex: 1;padding-left: 20px;box-sizing: border-box;}
+			.main .productNum .price{width: 0;-webkit-box-flex:2;}
+			.main .productNum .price span{color: #FF0000;}
+			
+			.main .wrapper{-webkit-box-flex: 1;overflow: hidden;position: relative;}
+			
+			.main .product{width: 100%;height: 5.8rem;border-top: 1px solid #636363;border-bottom: 1px solid #636363;background: #fff;color: #000;box-sizing: border-box;display: -webkit-box;}
+			.main .product .Img{width: 4.35rem;height: 4.35rem;box-sizing: border-box;margin: .7rem 0 0 .85rem;}
+			.main .product .Img img{width: 4.25rem;height: 4.25rem;border: .05rem solid #636363;}
+			.main .product .jieshao{-webkit-box-flex: 1;margin-left: 1rem;display: -webkit-box;}
+			.main .product .jieshao .jieshao_1{-webkit-box-flex: 7;width: 0;padding: .7rem 0 0 0;font-size: .7rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(1){height: 2rem;line-height: 1rem;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(2){height: 1rem;line-height: 1rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(2) span{line-height: 1rem;color: #f00;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(3){line-height: 1.1rem;height: 1.1rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(3) input:nth-of-type(1){width: 1.45rem;height: 1.1rem;background: #9e9e9e;text-align: center;line-height: 1.1rem;border: 0;color: #fff;font-size: 1rem;border-radius: .3rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(3) input:nth-of-type(2){width: 1.73rem;height: 1.1rem;background: #fff;text-align: center;line-height: 1.1rem;border: 0;color: #000;font-size: .7rem;margin: 0 .5rem;border: 0.05rem solid #808080;border-radius: .2rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(3) input:nth-of-type(3){width: 1.45rem;height: 1.1rem;background: #9e9e9e;text-align: center;line-height: 1.1rem;border: 0;color: #fff;font-size: 1rem;border-radius: .3rem;}
+			
+			
+			.main .product .jieshao .jieshao_2{-webkit-box-flex: 1;width: 0;padding: .7rem 0 0 0;}
+			.main .product .jieshao .jieshao_2 .daxiao{margin-top: 1rem;}
+						
+			.bottom a:nth-of-type(3){border-top: 4px solid #e43669;}
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					购物车
+				</div>
+				<div class="jies">
+					<p>结算</p>
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<div class="productNum">
+					<div class="Num">
+						商品数量:<span id="allPro">...</span>
+					</div>
+					<div class="price">
+						应付总额(不含运费):<span id="allPrice">￥0</span>	
+					</div>
+				</div>
+				<!--product-->
+				<div class="wrapper" id="wrapper">
+					<div class="productBox" id="scrollBar">
+						
+						
+					</div>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			<footer class="bottom">
+				<a href="index.html" class="xz1" >
+					<i class="fa fa-home"></i>
+					<br />
+					<span>首页</span>
+				</a>
+				<a href="classify.html" class="xz2">
+					<i class="fa fa-bars"></i><br />
+					<span>分类</span>
+				</a>
+				<a href="shopCar.html" class="xz3">
+					<i class="fa fa-shopping-cart"></i><br />
+					<span>购物车</span>
+					<div class="num" id="num">
+						0
+					</div>
+				</a>
+				<a href="myShow.html" class="xz4">
+					<i class="fa fa-user"></i><br />
+					<span>我的秀</span>
+				</a>
+				<a href="more.html" class="xz5">
+					<i class="fa fa-ellipsis-h"></i><br />
+					<span>更多</span>
+				</a>
+			</footer>
+			
+			
+		</div>
+	</body>
+	<script src="js/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lib/touch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lib/iscroll-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shopCar.js" type="text/javascript" charset="utf-8"></script>
+</html>

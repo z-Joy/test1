@@ -1,0 +1,19 @@
+@charset "utf-8";
+a{text-decoration: none;}
+.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+
+
+.main{width: 100%;height: 0%;overflow: auto;-webkit-box-flex: 1;border-top: 1px solid #636363;}
+.main .swiper-container{height: 100%;position: relative;}
+.main .swiper-container .swiper-wrapper,.swiper-slide,.swiper-slide img{height: 100%;width: 100%;}
+
+.main .swiper-container .swiper-pagination{position: absolute;bottom: 0px;}
+			
+.bottom{width: 100%;height: 2.45rem;-webkit-box-flex: 0;background: #000000;color: #fff;display: -webkit-box;line-height: 2.45rem;}
+.bottom a{color: #fff;display: block;-webkit-box-flex: 1;font-size: .8rem;text-align: center;box-sizing: border-box;border-top: 4px solid #000;width: 0;}
+.bottom a:nth-of-type(3){border-top: 4px solid #e43669;}

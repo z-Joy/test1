@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+	
+	
+			.main{width: 100%;height:0%;overflow: auto;-webkit-box-flex: 1;}
+			.main .productNum{width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #000;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;font-size: .7rem;}
+			.main .productNum .Num{width: 0;-webkit-box-flex: 1;padding-left: 20px;box-sizing: border-box;}
+			.main .productNum .price{width: 0;-webkit-box-flex:2;}
+			.main .productNum .price span{color: #FF0000;}
+			.main .product{width: 100%;height: 5.8rem;border-top: 1px solid #CBCBCB;border-bottom: 1px solid #aaa;background: #fff;color: #000;box-sizing: border-box;display: -webkit-box;}
+			.main .product .Img{width: 4.35rem;height: 4.35rem;box-sizing: border-box;margin: .7rem 0 0 .85rem;}
+			.main .product .Img img{width: 4.25rem;height: 4.25rem;border: .05rem solid #636363;}
+			.main .product .jieshao{-webkit-box-flex: 1;margin-left: 1rem;display: -webkit-box;}
+			.main .product .jieshao .jieshao_1{-webkit-box-flex: 7;width: 0;padding: .7rem 0 0 0;font-size: .7rem;position: relative;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(1){height: 2rem;line-height: 1rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(2){height: 1rem;line-height: 1rem;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(2) span{line-height: 1rem;color: #f00;}
+			.main .product .jieshao .jieshao_1 p:nth-of-type(3){line-height: 1.1rem;height: 1.1rem;}
+			
+			
+			.main .product .jieshao .jieshao_2{-webkit-box-flex: 1;width: 0;padding: .7rem 0 0 0;}
+			.main .product .jieshao .jieshao_2 .daxiao{}
+			
+			.main .product .jieshao .jieshao_1 .clear{border: 0;width: 3.45rem;height: 1.375rem;position: absolute;right: 0rem;bottom: 1rem;color: #fff;background: -webkit-linear-gradient(top,#f65e87,#d91351);border: 0;border-top: 0.05rem solid #aaa;box-shadow: 0 .05rem .05rem 0 rgba(0,0,0,.8);}	
+			
+			.bottom a:nth-of-type(4){border-top: 4px solid #e43669;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back" id="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					我的订单
+				</div>
+				<div class="jies">
+					
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<div class="productNum">
+					<div class="Num">
+						商品数量:<span>1</span>
+					</div>
+					<div class="price">
+						应付总额(不含运费):<span>￥199</span>	
+					</div>
+				</div>
+				<div class="product">
+					<div class="Img">
+						<img src="img/gouwc1.jpg"/>
+					</div>
+					<div class="jieshao">
+						<div class="jieshao_1">
+							<p>ESPRIT 气质V领玫红T恤</p>
+							<p>单价：<span>￥199</span></p>
+							<p>数量：1</p>
+							<input type="button" name="" id="" value="取消订单" class="clear"/>
+						</div>
+						<div class="jieshao_2">
+							<div class="daxiao">
+								L
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="Img">
+						<img src="img/product2.jpg"/>
+					</div>
+					<div class="jieshao">
+						<div class="jieshao_1">
+							<p>CACBM 盖尔斯条纹单肩包</p>
+							<p>单价：<span>￥399</span></p>
+							<p>数量：1</p>
+							<input type="button" name="" id="" value="取消订单" class="clear"/>
+						</div>
+						<div class="jieshao_2">
+							<div class="daxiao">
+								L
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			<footer class="bottom">
+				<a href="index.html" class="xz1" >
+					<i class="fa fa-home"></i>
+					<br />
+					<span>首页</span>
+				</a>
+				<a href="classify.html" class="xz2">
+					<i class="fa fa-bars"></i><br />
+					<span>分类</span>
+				</a>
+				<a href="shopCar.html" class="xz3">
+					<i class="fa fa-shopping-cart"></i><br />
+					<span>购物车</span>
+					<div class="num" id="num">
+						0
+					</div>
+				</a>
+				<a href="myShow.html" class="xz4">
+					<i class="fa fa-user"></i><br />
+					<span>我的秀</span>
+				</a>
+				<a href="more.html" class="xz5">
+					<i class="fa fa-ellipsis-h"></i><br />
+					<span>更多</span>
+				</a>
+			</footer>
+			
+		</div>
+	</body>
+	<script src="js/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myOrder.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</html>

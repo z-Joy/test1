@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>proDetails</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+			.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+	
+	
+			.main{width: 100%;height:0%;overflow: auto;-webkit-box-flex: 1;background: #fff;}
+			.main img{width: 100%;height: 8.1rem;border-top: 1px solid #636363;}
+			.main .content{font-size: .6rem;line-height: .9rem;padding: .5rem 2rem 0 1rem;}
+			.main .content p{margin-bottom: 1rem;}
+			.main .content p:last-of-type{margin-bottom: 0;}
+			
+			.bottom{width: 100%;height: 2.45rem;-webkit-box-flex: 0;background: #000000;color: #fff;display: -webkit-box;line-height: 2.45rem;}
+			.bottom a{color: #fff;display: block;-webkit-box-flex: 1;font-size: .8rem;text-align: center;box-sizing: border-box;border-top: 4px solid #000;width: 0;}
+			.bottom a:nth-of-type(2){border-top: 4px solid #e43669;}
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back" id="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					商品详情
+				</div>
+				<div class="jies">
+					<p>分享</p>
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<img src="img/xiangqing.jpg"/>
+				<div class="content">
+					<p>产地：土耳其&nbsp;&nbsp;品牌：LIU·JO&nbsp;&nbsp;商品名称：灰色个性团印花短袖T恤(配饰品)</p>
+					<p>舒适的领口，时尚大方，极简的风格，彰显女人本色。兽头人身的团，彰显另类个性。小小的胸花随心点缀，女人的可爱气质。(胸花偶别针，可拆卸)体现。</p>
+					<p>细节靓点：印花，配装物品</p>
+					<p>舒适的领口，时尚大方，极简的风格，彰显女人本色。兽头人身的团，彰显另类个性。小小的胸花随心点缀，女人的可爱气质。(胸花偶别针，可拆卸)体现。</p>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			<footer class="bottom">
+				<a href="proIntroduce.html" class="xz1">
+					<span>介绍</span>
+				</a>
+				<a href="proDetails.html" class="xz2">
+					<span>详情</span>
+				</a>
+				<a href="detailsImg.html" class="xz3">
+					<span>实拍</span>
+				</a>
+			</footer>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var back=document.getElementById("back");
+			back.onclick=function(){
+				window.history.back();		
+			}
+		}
+	</script>
+</html>

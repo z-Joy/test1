@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>kongGWC</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			a{text-decoration: none;}
+			.allCon{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.top{-webkit-box-flex: 0;width: 100%;height: 2.2rem;border-top: 1px solid #636363;border-bottom: 1px solid #000000;background: #e4366b;line-height: 2.2rem;color: #fff;box-sizing: border-box;display: -webkit-box;}
+			.top .back{width: 0;-webkit-box-flex: 1;padding-left: 1rem;color: #222;}
+			.top .tit{width: 0;-webkit-box-flex: 4;text-align: center;}
+			.top .jies{width: 0;-webkit-box-flex: 1;padding-right: 1rem;}
+			.top .jies p{width: 2.75rem;height: 1.35rem;background: -webkit-linear-gradient(top,#f65e87,#d91351);font-size: .6rem;text-align: center;line-height: 1.35rem;float: right;margin-top: .425rem;border-radius: .3rem;box-shadow: 0 0 .2rem .0rem rgba(0,0,0,.3);}
+	
+	
+			.main{width: 100%;height:0%;overflow: auto;-webkit-box-flex: 1;}
+			.main p{width: 100%;margin: 1.625rem 0 .7rem 0;text-align: center;line-height: 1rem;font-size: .8rem;}					
+			.main .wifi{width: 100%;height: 6.5rem;font-size: 6.5rem;text-align: center;line-height: 6.5rem;color: #d2d2d2;margin-bottom: 1.75rem;}
+			.main .btn{width: 100%;height: 2.35rem;font-size: 1.2rem;text-align: center;line-height: 2.35rem;color: #fff;}
+			.main .btn input{width: 10.55rem;height: 2.35rem;text-align: center;background: -webkit-linear-gradient(top,#f65e87,#d91351);border: 0;border-radius: .3rem;border-top: .05rem solid #bbb;color: #fff;}
+		
+			.bottom a:nth-of-type(3){border-top: 4px solid #e43669;}
+		</style>
+	</head>
+	<body>
+		<div class="allCon">
+			<header id="top" class="top">
+				<div class="back">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="tit">
+					购物车
+				</div>
+				<div class="jies">
+					<p>去结算</p>
+				</div>
+			</header>
+			<!--main-->
+			<div class="main">
+				<p>你的购物车空空~</p>
+				<div class="wifi">
+					<i class="fa fa-rss-square"></i>
+				</div>
+				<div class="btn">
+					<input type="button" id="" value="去逛逛" onclick="index()"/>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			<!--bottom-->
+			<footer class="bottom">
+				<a href="index.html" class="xz1" >
+					<i class="fa fa-home"></i>
+					<br />
+					<span>首页</span>
+				</a>
+				<a href="classify.html" class="xz2">
+					<i class="fa fa-bars"></i><br />
+					<span>分类</span>
+				</a>
+				<a href="shopCar.html" class="xz3">
+					<i class="fa fa-shopping-cart"></i><br />
+					<span>购物车</span>
+					
+				</a>
+				<a href="myShow.html" class="xz4">
+					<i class="fa fa-user"></i><br />
+					<span>我的秀</span>
+				</a>
+				<a href="more.html" class="xz5">
+					<i class="fa fa-ellipsis-h"></i><br />
+					<span>更多</span>
+				</a>
+			</footer>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		function index(){
+			window.location.href="index.html";
+		}
+	</script>
+</html>
